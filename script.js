@@ -21,6 +21,10 @@ function cleanInputString(str) {
   const regex = /[+-\s]/g; // \s = shorthand for white space [] = character set g = global search
   return str.replace(regex, "");
 }
-// Note that you need to use the \ to escape the +, because a + has a special meaning in regular expressions.
-// ".replace" takes two arguments. The first is the character sequence to replace – this can either be a string or a regex pattern. 
-// The second is the string to replace that sequence with. "example".replace(regex, "") = replace with nothing
+
+function isInvalidInput(str) {
+  // const regex = /[0-9]+e[0-9]+/i;
+  const regex = /\d+e\d+/i; // \d = shorthand for digit, sub for [0-9]
+  return str.match(regex);
+}
+
