@@ -34,5 +34,6 @@ function addEntry() {
   const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length;
   const HTMLString = `<label for="${targetId}-${entryNumber}-name">Entry ${entryNumber} Name</label>
                       <input id="${targetId}-${entryNumber}-name" placeholder="Name" type="text" />
+                      <label for="${targetId}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
                       `;
 }
