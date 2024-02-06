@@ -6,3 +6,7 @@
 - The + modifier in a regex allows you to match a pattern that occurs one or more times.
 - \d = shorthand for digit, sub for [0-9]
 - \s = shorthand for white space [] = character set g = global search
+
+- The insertAdjacentHtml method takes two arguments. The first argument is a string that specifies the position of the inserted element. The second argument is a string containing the HTML to be inserted.
+For the first argument, pass the string "`beforeend`" to insert the new element as the last child of `targetInputContainer`.
+For the second argument, pass your HTMLString variable.
