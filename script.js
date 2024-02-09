@@ -8,6 +8,7 @@ const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
 
 let isError = false;
+addEntryBtn.addEventListener('click', addEntry);
 
 function cleanInputString(str) {
   // const strArray = str.split('');
@@ -40,4 +41,8 @@ function addEntry() {
   targetInputContainer.insertAdjacentElement('beforeend', HTMLString);
 }
 
-addEntryBtn.addEventListener('click', addEntry);
+function getCaloriesFromInputs(list) {
+  let calories = 0;
+
+
+}
