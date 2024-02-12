@@ -15,3 +15,5 @@ For the second argument, pass your HTMLString variable.
   ``for (const element of elementArray) {
   console.log(element);
 }``
+
+- argument passed will be the browser event – `e` is a common name for this parameter.
