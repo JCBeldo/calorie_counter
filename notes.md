@@ -17,3 +17,4 @@ For the second argument, pass your HTMLString variable.
 }``
 
 - argument passed will be the browser event – `e` is a common name for this parameter.
+- Array object has a `.from()` method that accepts an array-like and returns an array.
