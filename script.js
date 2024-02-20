@@ -10,6 +10,7 @@ const output = document.getElementById("output");
 let isError = false;
 addEntryBtn.addEventListener('click', addEntry);
 calorieCounter.addEventListener('submit', calculateCalories);
+clearButton.addEventListener('click', clearForm);
 
 function cleanInputString(str) {
   // const strArray = str.split('');
