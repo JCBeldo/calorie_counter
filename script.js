@@ -9,6 +9,7 @@ const output = document.getElementById("output");
 
 let isError = false;
 addEntryBtn.addEventListener('click', addEntry);
+calorieCounter.addEventListener('submit', calculateCalories);
 
 function cleanInputString(str) {
   // const strArray = str.split('');
@@ -87,4 +88,15 @@ function calculateCalories(e) {
                       <p>${exerciseCalories} Calories burned</p>
                      `;
   output.classList.remove('hide');
+}
+
+function clearForm() {
+  const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+
+  for (const container of inputContainers) {
+    container.innerHTML = '';
+  }
+  budgetInput.value = '';
+  output.innerText = '';
+  output.classList.add('hide');
 }
