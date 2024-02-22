@@ -41,7 +41,7 @@ function addEntry() {
                       <label for="${targetId}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
                       <input type="number" id="${targetId}-${entryNumber}-calories" placeholder="Calories" min="0" />
                       `;
-  targetInputContainer.insertAdjacentElement('beforeend', HTMLString);
+  targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
 
 function getCaloriesFromInputs(list) {
